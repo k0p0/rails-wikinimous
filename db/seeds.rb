@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+require "faker"
+
+# TODO: Write a seed to insert 100 posts in the database
+20.times do
+  post = Article.new(title: Faker::Hacker.noun, content: Faker::Hacker.say_something_smart)
+  post.save!
+end

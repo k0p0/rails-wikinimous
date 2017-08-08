@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+.container h3 {
+  color: white;
+  background-color: grey;
+  border: 1px solid black;
+}

@@ -1,0 +1,13 @@
+<div class="container">
+<table class="table table-condensed">
+<thead><tr><td>Title</td><td>Content</td></tr></thead>
+
+<% @articles.each do |a| %>
+<tr>
+<td> <a href="<%= article_path(a) %>"><%= a.title %></a></td>
+<td><%= a.content %></td>
+</tr>
+<% end %>
+</table>
+ <%= link_to "add a article", new_article_path, class: "btn btn-primary" %>
+</div>

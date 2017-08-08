@@ -1,0 +1,9 @@
+<%= form_for(article) do |f| %>
+<div class="form-group">
+<%= f.text_field(:title, size: '50', placeholder:'title') %>
+</div>
+<div class="form-group">
+<%= f.text_area(:content, size: '50x5', placeholder:'content') %>
+</div>
+<%= f.submit class: "btn btn-primary" %>
+<% end %>
